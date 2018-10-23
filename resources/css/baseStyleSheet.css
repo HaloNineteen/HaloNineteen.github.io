@@ -17,8 +17,8 @@ body {
 .header {
     margin-left: 10px;
     padding-top: 10px;
-    text-align: left;
     position: sticky;
+    text-align: left;
     top: 0;
     z-index: 1;
 }
@@ -26,24 +26,24 @@ body {
 /* Style the navigation bar */
 .navbar {
     height: 100%;
-    width: 100px;
-    position: fixed;
-    margin-top: 15px;
-    z-index: 1;
-    top: 1;
     left: 0;
+    margin-top: 15px;
     overflow-x: hidden;
+    position: fixed;
+    top: 1;
+    width: 100px;
+    z-index: 1;
 }
 
 /* Style the navigation bar links */
 .navbar a {
-    display: block;
     color: black;
-    text-align: left;
-    padding: 10px 20px;
-    text-decoration: none;
-    letter-spacing: 5px;
+    display: block;
     font-size: 15px;
+    letter-spacing: 5px;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
 }
 
 /* Change nav link color on hover */
@@ -71,8 +71,8 @@ body {
 
 /* Photo */
 .photo {
-    width: 100%;
     padding: 20px;
+    width: 100%;
 }
 
 /* Text indenting */
@@ -91,27 +91,27 @@ body {
 
 /* Subtitle of a post */
 .postSubtitle {
+    color: gray;
     font-size: 15px;
     font-weight: bold;
     letter-spacing: px;
     line-height: 1px;
-    color: gray;
     margin-bottom: 30px;
 }
 
 .videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
-	height: 0;
+	position: relative;
     z-index: 0;
 }
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
 	left: 0;
+    height: 100%;
+    position: absolute;
+	top: 0;
 	width: 100%;
-	height: 100%;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other. The second column was removed, so this is currently unused */
