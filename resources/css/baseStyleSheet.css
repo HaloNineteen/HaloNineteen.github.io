@@ -16,18 +16,21 @@ body {
 /* Header/logo Title */
 .header {
     margin-left: 10px;
-    margin-top: 15px;
+    padding-top: 10px;
     text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 /* Style the navigation bar */
 .navbar {
     height: 100%;
-    width: 250px;
+    width: 100px;
     position: fixed;
+    margin-top: 15px;
     z-index: 1;
     top: 1;
-    padding-top: 10px;
     left: 0;
     overflow-x: hidden;
 }
@@ -56,8 +59,8 @@ body {
 
 /* Main column */
 .main {   
-    margin-left: 250px;
-    margin-right: 50px;
+    padding-left: 200px;
+    padding-right: 30px;
 }
 
 /* Footer */
@@ -94,6 +97,21 @@ body {
     line-height: 1px;
     color: gray;
     margin-bottom: 30px;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    z-index: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other. The second column was removed, so this is currently unused */
