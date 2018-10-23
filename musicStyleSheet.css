@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    background-color: white;
+}
+
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    margin-left: 10px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Style the navigation bar */
+.navbar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 1;
+    padding-top: 10px;
+    left: 0;
+    overflow-x: hidden;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 10px 20px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 15px;
+}
+
+/* Change nav link color on hover */
+.navbar a:hover {
+    color: gray;
+}
+
+/* Active nav link color */
+.navbar a.active {
+    color: #5f4b8b;
+    font-weight: bold;
+}
+
+/* Main column */
+.main {   
+    margin-left: 250px;
+    margin-right: 50px;
+}
+
+/* Footer */
+.footer {
+    padding: 5px;
+    text-align: center;
+}
+
+/* Photo */
+.photo {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Text indenting */
+.indent { 
+    text-indent: 30px; 
+}
+
+/* Title of a post */
+.postTitle {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 0px;
+    text-transform: uppercase;
+}
+
+/* Subtitle of a post */
+.postSubtitle {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: px;
+    line-height: 1px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other. The second column was removed, so this is currently unused */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other. Does not function with the current nav bar layout */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
