@@ -75,17 +75,13 @@ body {
     width: 100%;
 }
 
-/* Text indenting */
-.indent { 
-    text-indent: 30px; 
-}
-
 /* Title of a post */
 .postTitle {
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 3px;
-    line-height: 0px;
+    margin-bottom: -15px;
+    margin-top: 5px;
     text-transform: uppercase;
 }
 
@@ -94,9 +90,10 @@ body {
     color: gray;
     font-size: 15px;
     font-weight: bold;
-    letter-spacing: px;
-    line-height: 1px;
-    margin-bottom: 30px;
+}
+
+.postBody {
+    font-size: 15px;
 }
 
 .videoWrapper {
