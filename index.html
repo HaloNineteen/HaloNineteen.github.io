@@ -3,6 +3,7 @@
 <head>
 <title>Halo Nineteen</title>
 <link href="resources/css/baseStyleSheet.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="resources/js/baseJavaScript.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -10,14 +11,32 @@
 
 <div class="header">
   <a href="index.html">
-    <img src = "resources/images/TitleLogoTransparent.png" alt="Halo Nineteen logo" width="auto" height="45">
+    <div class = "desktopLogo">
+      <img src = "resources/images/DesktopLogo.png" alt="Halo Nineteen logo" width="auto" height="40">
+    </div>    
+    <div class = "mobileLogo">
+      <img src = "resources/images/MobileLogo.png" alt="Halo Nineteen logo" width="auto" height="40">
+    </div>  
   </a>
 </div>
-
+    
+<div class="mobileNavButton">
+    <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+    
 <div class="navbar">
   <a href="index.html" class="active">NEWS</a>
   <a href="music.html">MUSIC</a>
   <a href="about.html">ABOUT</a>
+</div>
+    
+<div id = "mobileNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">NEWS</a>
+    <a href="music.html">MUSIC</a>
+    <a href="about.html">ABOUT</a>
+  </div>
 </div>
     
 <div class="main">
@@ -38,6 +57,8 @@
     <p class="postTitle">IT'S ALIVE!</p>
     <p class="postSubtitle">Monday, October 22nd, 2018</p>
     <p class="postBody">Just in time for Halloween, I've created my own monster - my first website designed (almost) from scratch with HTML, CSS, and lots of Googling, as opposed to using a website building service like Squarespace or Freewebs.</p>
+    
+    
     
     <p class="postBody">This website was started from the HTML code found in the <a href="https://www.w3schools.com/howto/howto_make_a_website.asp" target="_blank">How TO - Make a Website tutorial on w3schools.com</a>. The current design is heavily inspired by <a href="https://www.nin.com" target="_blank">nin.com</a>. I'm currently challenging myself to recreate the Nine Inch Nails main page to help me learn HTML and CSS, and after I get a little more comfortable, I'll design something original.</p>
     

@@ -3,6 +3,7 @@
 <head>
 <title>Halo Nineteen</title>
 <link href="resources/css/baseStyleSheet.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="resources/js/baseJavaScript.js"></script>    
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -10,14 +11,32 @@
 
 <div class="header">
   <a href="index.html">
-    <img src = "resources/images/TitleLogoTransparent.png" alt="Halo Nineteen logo" width="auto" height="45">
+    <div class = "desktopLogo">
+      <img src = "resources/images/DesktopLogo.png" alt="Halo Nineteen logo" width="auto" height="40">
+    </div>    
+    <div class = "mobileLogo">
+      <img src = "resources/images/MobileLogo.png" alt="Halo Nineteen logo" width="auto" height="40">
+    </div>  
   </a>
 </div>
 
+<div class="mobileNavButton">
+    <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>    
+    
 <div class="navbar">
   <a href="index.html">NEWS</a>
   <a href="music.html" class="active">MUSIC</a>
   <a href="about.html">ABOUT</a>
+</div>
+    
+<div id = "mobileNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">NEWS</a>
+    <a href="music.html">MUSIC</a>
+    <a href="about.html">ABOUT</a>
+  </div>
 </div>
     
 <div class="main">
@@ -36,6 +55,6 @@
 
 <div class="footer">
 </div>
-
+    
 </body>
 </html>
