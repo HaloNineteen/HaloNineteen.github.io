@@ -143,10 +143,13 @@ body {
 .postSubtitle {
     color: gray;
     font-size: 15px;
-    font-weight: bold;
 }
 
 .postBody {
+    font-size: 15px;
+}
+
+.postList {
     font-size: 15px;
 }
 
